@@ -1,13 +1,103 @@
-body {
+
+/* Normalize */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  user-select: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Some config */
+body {
+  width: 100%;
+  background: #d0d0d0;
+}
+
+.root, .contador-react {
+  width: 100%;
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container style */
+.contador-react {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em;
+  width: 60%;
+  background: #ffffff;
+  border-radius: 0 0 1em 1em;
+  box-shadow: 0px 0px 13px -1px #333;
+}
+
+.titulo {
+  margin: 0.5em 0 1em;
+  font-size: 3rem;
+}
+
+.cantidad {
+  margin-bottom: 1em;
+  font-size: 3em;
+  font-weight: bold;
+  color: #6e6c6c;
+}
+
+/* Buttons configs */
+.boton-suma,
+.boton-resta,
+.boton-reinicio {
+  width: 32%;
+  border-radius: 0.2em;
+}
+
+.boton-suma {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  margin: 0.2em;
+  border: none;
+  padding: 1em 5em;
+  background: rgb(72, 141, 26);
+  cursor: pointer;
+}
+
+
+.boton-resta {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  margin: 0.5em;
+  border: none;
+  padding: 1em 5em;
+  background: rgb(187, 47, 47);
+  cursor: pointer;
+}
+
+.boton-reinicio {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  margin: 0.5em;
+  border: none;
+  padding: 1em 5em;
+  background: rgb(29, 116, 128);
+  cursor: pointer;
+}
+
+/* On mouse hover */
+.boton-suma:hover {
+  background: rgb(60, 117, 22);
+}
+.boton-resta:hover {
+  background: rgb(145, 34, 34);
+}
+.boton-reinicio:hover {
+  background: rgb(20, 79, 87);
 }
